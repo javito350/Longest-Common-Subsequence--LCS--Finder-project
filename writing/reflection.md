@@ -1,10 +1,10 @@
 # Finding the Longest Common Subsequence
 
-## Add Your Name Here
+## Javier Bejarano
 
 ## Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this project."
 
-TODO: You must retype the sentence here in order to digitally sign your pledge.
+I adhered to the Allegheny College Honor Code while completing this project.
 
 **IMPORTANT:** If you do not type the required sentence then the course
 instructor will not know that you adhered to the Allegheny College Honor Code
@@ -12,11 +12,7 @@ while completing the project.
 
 ## References
 
-TODO: Please list here the sources that you consulted while completing this
-algorithm engineering project. The list of sources should also include
-references to any artificial intelligence coding assistants that you used and a
-summary of the ways in which you used those coding assistants to complete this
-project. You can use a Markdown list to provide and comment on the sources.
+Copilot.
 
 ## Program Output
 
@@ -26,12 +22,14 @@ project. You can use a Markdown list to provide and comment on the sources.
 
 ```text
 output
+
 ```
 
 #### Second output from running the `systemsense` program
 
 ```text
 output
+
 ```
 
 ### Use three fenced code blocks to provide output from all different runs of `lcsfinder` for the three algorithms
@@ -47,6 +45,7 @@ output
 
 ```text
 output
+
 ```
 
 #### Provide the command output for the runs of the `lcsfinder` and the second algorithm
@@ -60,6 +59,7 @@ output
 
 ```text
 output
+
 ```
 
 #### Provide the command output for the runs of the `lcsfinder` and the third algorithm
