@@ -12,6 +12,7 @@ class BenchmarkData:
     """A class to represent the benchmark data."""
 
     def __init__(self, run_count: int, input_size: int, execution_time: float):
+        """Initialize the benchmark data."""
         self.run_count = run_count
         self.input_size = input_size
         self.execution_time = execution_time
@@ -73,4 +74,3 @@ def find_minimum(data: List[BenchmarkData]) -> BenchmarkData:
 def find_average(data: List[BenchmarkData]) -> float:
     """Return the average execution time."""
     return sum(item.execution_time for item in data) / len(data)
-
