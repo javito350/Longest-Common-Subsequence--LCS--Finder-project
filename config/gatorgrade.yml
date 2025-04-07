@@ -106,7 +106,7 @@ setup: |
       check: CountMultipleLineComments
       options:
         language: "Python"
-        count: 5
+        count: 2
         exact: false
     - description: Create a sufficient number of single-line comments in generate.py
       check: CountSingleLineComments

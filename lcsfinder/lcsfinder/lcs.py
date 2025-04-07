@@ -7,8 +7,6 @@
 # You must add comments that explain the purpose of each of the key
 # statements inside of each of the LCS algorithms.
 
-"""Compute the longest common subsequence of two strings."""
-
 
 def lcs_recursive(str1: str, str2: str) -> str:
     """Compute the LCS of two strings using a recursive approach."""

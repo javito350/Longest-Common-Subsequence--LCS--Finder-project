@@ -74,6 +74,3 @@ def find_average(data: List[BenchmarkData]) -> float:
     """Return the average execution time."""
     return sum(item.execution_time for item in data) / len(data)
 
-
-# implement all of the functions needed to conduct a benchmark that runs a
-# doubling experiment to evaluate the performance of the LCS algorithms

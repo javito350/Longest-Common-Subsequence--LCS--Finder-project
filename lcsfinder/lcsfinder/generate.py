@@ -31,8 +31,6 @@ def generate_data(data_type: str, size: int) -> tuple:
     return str1, str2
 
 
-"""Automatically generate data used for benchmarking."""
-
 # implement all of the generation functions so that your program can
 # generate data according to the requirements in the README.md file. Please
 # note that you should be able to generate:
