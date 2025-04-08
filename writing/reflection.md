@@ -381,36 +381,7 @@ Average execution time: 1.094728 seconds across 2 runs
 | Calculate   | Chars     | Double             | 2          | 3    | 0.000008     | 0.000457     | 0.000164     |
 | Calculate   | Chars     | Order of Magnitude | 2          | 2    | 0.000008     | 2.189447     | 1.094728     |
 
-You must add instrumentation using tools like `timeit` to ensure that the
-`lcsfinder` calculates and reports the time overhead data that you will need
-to complete the entire experiment. Before you conduct your experiments, please
-carefully confirm that `lcsfinder` calculates and reports the time overhead
-values in a correct fashion.
-
-Use Markdown to provide one or more data tables that summarize the results
-from running the `lcsfinder` program in all possible different configurations.
-
 ## Performance Analysis
-
-Use several paragraphs and/or a list to explain each of the unique
-configurations for which it is possible to run the `lcsfinder` program. Please
-note that, for this algorithm engineering project, you are required to run the
-`lcsfinder` tool in all possible valid configurations so that you can carefully
-study the performance of all the key algorithms that you implemented in the
-`lcs.py` file. You need to make sure that you specified values for `--startsize`
-and `--runs` that ensure the `lcsfinder` will report performance results that
-help you to accurately characterize the worst-case time complexity of the each
-algorithm for finding the longest common subsequence of two strings. Your
-performance analysis should also investigate whether or not the use of `int` or
-`char` data influences the performance of the algorithms that find the LCS.
-
-Make sure that your responses explain WHY certain configurations are faster!
-
-It is not sufficient to ONLY explain WHICH configuration is faster!
-
-It is not sufficient to ONLY discuss the empirical results! You must also
-state and explain the worst-case time complexities for each of the stated
-methods!
 
 I have tested the `lcsfinder` program with the following configurations:
 
