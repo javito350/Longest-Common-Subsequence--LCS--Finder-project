@@ -73,4 +73,6 @@ def find_minimum(data: List[BenchmarkData]) -> BenchmarkData:
 
 def find_average(data: List[BenchmarkData]) -> float:
     """Return the average execution time."""
-    return sum(item.execution_time for item in data) / len(data) # return average time of all runs
+    return sum(item.execution_time for item in data) / len(
+        data
+    )  # return average time of all runs

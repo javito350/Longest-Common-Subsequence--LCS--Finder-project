@@ -18,7 +18,3 @@ class LCSFinderConstants:
 
 # Create a global instance of the constants
 CONSTANTS = LCSFinderConstants()
-
-# define any numerical constants used in the listmutator module
-# make sure that you use the dataclass decorator to create the constants;
-# you can refer to your prior algorithm engineering projects for more details

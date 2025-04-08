@@ -35,7 +35,3 @@ class BenchmarkingStrategy(str, Enum):
     def __str__(self):
         """Define a default string representation."""
         return self.value
-
-
-# All all of the enums that you need to define the configuration
-# of the approach through the command-line interface of the tool.

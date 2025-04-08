@@ -111,10 +111,10 @@ Displaying Benchmark Results
 
 #### Provide the command the output for the runs of the `lcsfinder` and the first algorithm
 
-- TODO: Provide the complete command-lines for your uses of the `lcsfinder` program
-- TODO: Provide your own example of a command(s) and the output that it produces
-- TODO: Make sure that each run is for a unique configuration of the tool
-- TODO: Make sure that each run is only for the use of the tool with the specified algorithm
+- Provide the complete command-lines for your uses of the `lcsfinder` program
+- Provide your own example of a command(s) and the output that it produces
+- Make sure that each run is for a unique configuration of the tool
+- Make sure that each run is only for the use of the tool with the specified algorithm
 
 - `poetry run lcsfinder --algorithmtype recursive --startsize 1 --runs 2 --datatype ints --strategy double`
 
@@ -195,10 +195,10 @@ Average execution time: 0.023162 seconds across 2 runs
 
 #### Provide the command output for the runs of the `lcsfinder` and the second algorithm
 
-- TODO: Provide the complete command-lines for your uses of the `lcsfinder` program
-- TODO: Provide your own example of a command(s) and the output that it produces
-- TODO: Make sure that each run is for a unique configuration of the tool
-- TODO: Make sure that each run is only for the use of the tool with the specified algorithm
+- Provide the complete command-lines for your uses of the `lcsfinder` program
+- Provide your own example of a command(s) and the output that it produces
+- Make sure that each run is for a unique configuration of the tool
+- Make sure that each run is only for the use of the tool with the specified algorithm
 
 - `poetry run lcsfinder --algorithmtype dynamic --startsize 1 --runs 2 --datatype ints --strategy double`
 
@@ -281,10 +281,10 @@ Average execution time: 0.000093 seconds across 2 runs
 
 #### Provide the command output for the runs of the `lcsfinder` and the third algorithm
 
-- TODO: Provide the complete command-lines for your uses of the `lcsfinder` program
-- TODO: Provide your own example of a command(s) and the output that it produces
-- TODO: Make sure that each run is for a unique configuration of the tool
-- TODO: Make sure that each run is only for the use of the tool with the specified algorithm
+- Provide the complete command-lines for your uses of the `lcsfinder` program
+- Provide your own example of a command(s) and the output that it produces
+- Make sure that each run is for a unique configuration of the tool
+- Make sure that each run is only for the use of the tool with the specified algorithm
 
 - `poetry run lcsfinder --algorithmtype calculate --startsize 1 --runs 2 --datatype ints --strategy double`
 
@@ -376,21 +376,23 @@ Average execution time: 1.094728 seconds across 2 runs
 | Recursive   | Chars     | Order of Magnitude | 1          | 2    | 0.000006     | 0.046317     | 0.023162     |
 | Dynamic     | Ints      | Double             | 1          | 2    | 0.000003     | 0.000003     | 0.000003     |
 | Dynamic     | Chars     | Double             | 2          | 3    | 0.000013     | 0.000036     | 0.000022     |
+| Dynamic     | Chars     | Order of Magnitude | 2          | 2    | 0.000006     | 0.000179     | 0.000093     |
 | Calculate   | Ints      | Double             | 1          | 2    | 0.000013     | 0.000032     | 0.000022     |
+| Calculate   | Chars     | Double             | 2          | 3    | 0.000008     | 0.000457     | 0.000164     |
 | Calculate   | Chars     | Order of Magnitude | 2          | 2    | 0.000008     | 2.189447     | 1.094728     |
 
-TODO: You must add instrumentation using tools like `timeit` to ensure that the
+You must add instrumentation using tools like `timeit` to ensure that the
 `lcsfinder` calculates and reports the time overhead data that you will need
 to complete the entire experiment. Before you conduct your experiments, please
 carefully confirm that `lcsfinder` calculates and reports the time overhead
 values in a correct fashion.
 
-TODO: Use Markdown to provide one or more data tables that summarize the results
+Use Markdown to provide one or more data tables that summarize the results
 from running the `lcsfinder` program in all possible different configurations.
 
 ## Performance Analysis
 
-TODO: Use several paragraphs and/or a list to explain each of the unique
+Use several paragraphs and/or a list to explain each of the unique
 configurations for which it is possible to run the `lcsfinder` program. Please
 note that, for this algorithm engineering project, you are required to run the
 `lcsfinder` tool in all possible valid configurations so that you can carefully
@@ -402,11 +404,11 @@ algorithm for finding the longest common subsequence of two strings. Your
 performance analysis should also investigate whether or not the use of `int` or
 `char` data influences the performance of the algorithms that find the LCS.
 
-TODO: Make sure that your responses explain WHY certain configurations are faster!
+Make sure that your responses explain WHY certain configurations are faster!
 
-TODO: It is not sufficient to ONLY explain WHICH configuration is faster!
+It is not sufficient to ONLY explain WHICH configuration is faster!
 
-TODO: It is not sufficient to ONLY discuss the empirical results! You must also
+It is not sufficient to ONLY discuss the empirical results! You must also
 state and explain the worst-case time complexities for each of the stated
 methods!
 
@@ -419,6 +421,7 @@ I have tested the `lcsfinder` program with the following configurations:
 - **Recursive Algorithm with Order of Magnitude**: This configuration had a minimum execution time of 0.000006 seconds and a maximum execution time of 0.046317 seconds, with an average execution time of 0.023162 seconds across 2 runs. The order of magnitude strategy significantly increased the input size, leading to a much longer execution time.
 
 - **Dynamic Algorithm with Ints**: This configuration was the fastest among the dynamic algorithm configurations, with a minimum execution time of 0.000003 seconds and a maximum execution time of 0.000003 seconds. The average execution time was 0.000003 seconds across 2 runs. The dynamic programming approach is more efficient than the recursive approach for larger input sizes, with a time complexity of O(n^2).
+
 - **Dynamic Algorithm with Chars**: This configuration had a minimum execution time of 0.000013 seconds and a maximum execution time of 0.000036 seconds, with an average execution time of 0.000022 seconds across 3 runs. The dynamic programming approach is still efficient for larger input sizes, but the performance is slightly slower than the integer configuration due to the overhead of handling character data.
 
 - **Dynamic Algorithm with Order of Magnitude**: This configuration had a minimum execution time of 0.000006 seconds and a maximum execution time of 0.000179 seconds, with an average execution time of 0.000093 seconds across 2 runs. The order of magnitude strategy significantly increased the input size, leading to a longer execution time.
@@ -433,15 +436,15 @@ I have tested the `lcsfinder` program with the following configurations:
 
 ### Overall, what are the trade-offs associated with using a different algorithmic approaches to finding the longest common subsequence?
 
-TODO: Provide a one-paragraph response that answers this question in your own words.
+I would say that the recursive approach is the simplest to implement, but it is not the most efficient. For example, when using the recursive algorithm with character data and the order of magnitude strategy, the execution time increased significantly from 0.000006 seconds (size 1) to 0.046317 seconds (size 10), demonstrating its exponential time complexity. The dynamic programming approach is more efficient for larger input sizes, as seen in the dynamic algorithm with integer data using the doubling strategy, where the execution time remained constant at 0.000003 seconds across all runs. However, this approach requires more memory to store intermediate results. The calculate algorithm, while similar to the dynamic programming approach, may have additional overhead due to intermediate calculations. For instance, with character data and the order of magnitude strategy, the calculate algorithm's execution time increased from 0.000008 seconds (size 2) to 2.189447 seconds (size 20). Finally, the order of magnitude strategy significantly increases the input size, leading to longer execution times across all algorithms, as seen in the calculate algorithm's performance.
 
 ### What is challenging about designing an experiment to evaluate the performance of LCS finding?
 
-TODO: Provide a one-paragraph response that answers this question in your own words.
+For me this project was easier than the previous one because the previous one helped me to get an idea about how all the files are structured and how to run the program. The most challenging part was to understand how to select the right benchmarking strategy and how to orginze all the files in order to import them in main. Additionally, I had to be careful about how to interpret the results, especially when comparing different algorithms and data types. The performance of the algorithms can vary significantly based on the input size and data type, so it was important to conduct multiple runs and analyze the results carefully.
 
 ### Take Home Points
 
-TODO: Provide a two to three sentence statement about the key takeaways from
+Provide a two to three sentence statement about the key takeaways from
 conducting this experiment. Please note that the course instructor will display
 some student takeaways on the course website and use them to facilitate
 follow-on class discussions. The takeways that you write should be specifically
