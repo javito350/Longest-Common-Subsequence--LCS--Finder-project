@@ -444,9 +444,4 @@ For me this project was easier than the previous one because the previous one he
 
 ### Take Home Points
 
-Provide a two to three sentence statement about the key takeaways from
-conducting this experiment. Please note that the course instructor will display
-some student takeaways on the course website and use them to facilitate
-follow-on class discussions. The takeways that you write should be specifically
-connected to the system that you implemented and the experiments that you
-conducted.
+This assingment helps to practice my coding skills and how organize all the files in order to run the program through the main file and time it thanks of benchmarking. I also learned a little bit of how to use the `lcsfinder` program to evaluate the performance of different algorithms for finding the longest common subsequence. The project also helped me to understand the trade-offs associated with different algorithmic approaches and how to design experiments to evaluate their performance. Where the recursive aproach was simple but not efficient for larger inputs, the dynamic programming approach was more efficient but required more memory. The calculate algorithm was similar to the dynamic programming approach but may have additional overhead due to intermediate calculations. Overall, this project helped me to improve my coding skills and understand the importance of algorithmic efficiency in software development.
