@@ -118,6 +118,8 @@ Displaying Benchmark Results
 
 - `poetry run lcsfinder --algorithmtype recursive --startsize 1 --runs 2 --datatype ints --strategy double`
 
+This run tests the recursive algorithm with integer data using the doubling strategy. It evaluates the algorithm's performance for small input sizes to highlight its inefficiency as input size grows.
+
 ```text
 output
 Benchmarking Tool for LCS Computation
@@ -142,6 +144,8 @@ Average execution time: 0.000010 seconds across 2 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype recursive --startsize 2 --runs 3 --datatype chars --strategy double`
+
+This command benchmarks the recursive algorithm with character data using the doubling strategy. It evaluates how the recursive approach performs as the input size doubles, highlighting its inefficiency for larger inputs due to its exponential time complexity.
 
 ```text 
 output
@@ -168,6 +172,8 @@ Average execution time: 0.001925 seconds across 3 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype recursive --startsize 1  --runs 2  --datatype chars --strategy order_of_magnitude`
+
+This command benchmarks the recursive algorithm with character data using the order of magnitude strategy. It evaluates how the recursive approach performs as the input size increases by an order of magnitude, highlighting its inefficiency for larger inputs due to its exponential time complexity.
 
 ```text
 output
@@ -202,6 +208,9 @@ Average execution time: 0.023162 seconds across 2 runs
 
 - `poetry run lcsfinder --algorithmtype dynamic --startsize 1 --runs 2 --datatype ints --strategy double`
 
+This command benchmarks the dynamic programming algorithm with integer data using the doubling strategy. It evaluates how the dynamic programming approach performs as the input size doubles, highlighting its efficiency compared to the recursive approach due to its polynomial time complexity.
+
+
 ```text
 output
 
@@ -227,6 +236,8 @@ Average execution time: 0.000003 seconds across 2 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype dynamic --startsize 2 --runs 3 --datatype chars --strategy double`
+
+This command benchmarks the dynamic programming algorithm with character data using the doubling strategy. It evaluates how the dynamic programming approach performs as the input size doubles, demonstrating its efficiency compared to the recursive approach due to its polynomial time complexity.
 
 ```text
 output
@@ -254,6 +265,8 @@ Average execution time: 0.000022 seconds across 3 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype dynamic --startsize 2  --runs 2  --datatype chars --strategy order_of_magnitude`
+
+This command benchmarks the dynamic programming algorithm with character data using the order of magnitude strategy. It evaluates how the dynamic programming approach performs as the input size increases by an order of magnitude, demonstrating its efficiency compared to the recursive approach due to its polynomial time complexity.
 
 ```text
 output
@@ -288,6 +301,8 @@ Average execution time: 0.000093 seconds across 2 runs
 
 - `poetry run lcsfinder --algorithmtype calculate --startsize 1 --runs 2 --datatype ints --strategy double`
 
+This command benchmarks the calculate algorithm with integer data using the doubling strategy. It evaluates how the calculate algorithm performs as the input size doubles, highlighting its similarities to the dynamic programming approach while accounting for potential overhead due to intermediate calculations.
+
 ```text
 output
 
@@ -313,6 +328,8 @@ Average execution time: 0.000022 seconds across 2 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype calculate --startsize 2 --runs 3 --datatype chars --strategy double`
+
+This command benchmarks the calculate algorithm with character data using the doubling strategy. It evaluates how the calculate algorithm performs as the input size doubles, highlighting its similarities to the dynamic programming approach while accounting for potential overhead due to intermediate calculations.
 
 ```text
 output
@@ -340,6 +357,8 @@ Average execution time: 0.000164 seconds across 3 runs
 ```
 
 - `poetry run lcsfinder --algorithmtype calculate --startsize 2  --runs 2  --datatype chars --strategy order_of_magnitude`
+
+This command benchmarks the calculate algorithm with character data using the order of magnitude strategy. It evaluates how the calculate algorithm performs as the input size increases by an order of magnitude, highlighting its similarities to the dynamic programming approach while accounting for potential overhead due to intermediate calculations.
 
 ```text
 output
@@ -415,4 +434,4 @@ For me this project was easier than the previous one because the previous one he
 
 ### Take Home Points
 
-This assingment helps to practice my coding skills and how organize all the files in order to run the program through the main file and time it thanks of benchmarking. I also learned a little bit of how to use the `lcsfinder` program to evaluate the performance of different algorithms for finding the longest common subsequence. The project also helped me to understand the trade-offs associated with different algorithmic approaches and how to design experiments to evaluate their performance. Where the recursive aproach was simple but not efficient for larger inputs, the dynamic programming approach was more efficient but required more memory. The calculate algorithm was similar to the dynamic programming approach but may have additional overhead due to intermediate calculations. Overall, this project helped me to improve my coding skills and understand the importance of algorithmic efficiency in software development.
+This assignment helps to practice my coding skills and how organize all the files in order to run the program through the main file and time it thanks of benchmarking. I also learned a little bit of how to use the `lcsfinder` program to evaluate the performance of different algorithms for finding the longest common subsequence. The project also helped me to understand the trade-offs associated with different algorithmic approaches and how to design experiments to evaluate their performance. While the recursive aproach was simple, it was not efficient for larger inputs, the dynamic programming approach was more efficient but required more memory. The calculate algorithm was similar to the dynamic programming approach but may have additional overhead due to intermediate calculations. Overall, this project helped me to improve my coding skills and understand the importance of algorithmic efficiency in software development.
