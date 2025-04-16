@@ -210,7 +210,6 @@ Average execution time: 0.023162 seconds across 2 runs
 
 This command benchmarks the dynamic programming algorithm with integer data using the doubling strategy. It evaluates how the dynamic programming approach performs as the input size doubles, highlighting its efficiency compared to the recursive approach due to its polynomial time complexity.
 
-
 ```text
 output
 
