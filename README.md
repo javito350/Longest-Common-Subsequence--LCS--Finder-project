@@ -221,15 +221,6 @@ This project requires independent research and problem-solving. Not every implem
 - ✅ Delete all `TODO` markers and replace with meaningful comments
 - ✅ Ensure code runs for all specified configurations
 
----
-
-## 👨‍💻 Author
-
-**Javier Bejarano Jimenez**  
-Mathematics & Software Engineering Student  
-Allegheny College | CMPSC 200: Algorithm Analysis
-
----
 
 ## 📜 License
 
